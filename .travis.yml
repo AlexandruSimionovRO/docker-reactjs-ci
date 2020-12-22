@@ -10,12 +10,14 @@ script:
 
 deploy:
   provider: elasticbeanstalk
-  region: "us-east-2" 
+  region: "eu-west-2" 
   app: "ReactJS-App-Project"
   env: "ReactjsAppProject-env"
-  bucket_name: "elasticbeanstalk-us-east-2-945523477108"
+  bucket_name: "elasticbeanstalk-eu-west-2-945523477108"
   bucket_path: "ReactJS-App-Project"
   on:
     branch: master
   access_key_id: $AWS_ACCESS_KEY
   secret_access_key: $AWS_SECRET_KEY
+
+  
